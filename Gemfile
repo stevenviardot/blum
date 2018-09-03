@@ -62,3 +62,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'fontawesome-rails', '~> 4.0', '>= 4.0.3.2'
+
+# devise
+gem 'devise'

@@ -1,0 +1,30 @@
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="<%= root_path %>"><span>B</span>lum</a>
+			</div>
+			<div class="header-right">
+        <% if user_signed_in? && current_user.admin? %>
+           <span class="active uls-trigger">
+             <%= link_to('Accueil', root_path) %>
+           </span>
+           <span class="active uls-trigger">
+             <%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
+           </span>
+         <% elsif user_signed_in? %>
+           <span class="active uls-trigger">
+             <%= link_to('Mon compte', edit_user_registration_path) %>
+           </span>
+           <span class="active uls-trigger">
+             <%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
+           </span>
+         <% else %>
+           <%= link_to('Inscription', new_user_registration_path, class: "account") %>
+           <span class="active uls-trigger">
+             <%= link_to('Se connecter', new_user_session_path) %>
+           </span>
+         <% end %>
+
+			</div>
+		</div>
+	</div>

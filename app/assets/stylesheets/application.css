@@ -12,4 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.min
+ *= require bootstrap-select
+ *= require flexslider
+ *= require font-awesome.min
+ *= require jquery.uls
+ *= require style
+ *= require jquery.uls.grid
+ *= require jquery.uls.lcd
+
  */

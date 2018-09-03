@@ -14,3 +14,12 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery.min
+//= require bootstrap.min
+//= require bootstrap-select
+//= require jquery.leanModal.min
+//= require jquery.uls.data
+//= require jquery.uls.data.utils
+//= require jquery.uls.regionfilter
+//= require jquery.uls.core
+//= require jquery.flexisel

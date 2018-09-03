@@ -1,0 +1,18 @@
+  [1m[35m (548.3ms)[0m  [1m[35mCREATE DATABASE "blum_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (481.4ms)[0m  [1m[35mCREATE DATABASE "blum_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-09-03 12:37:21 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 1036ms (Views: 1013.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-03 12:40:23 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 313ms (Views: 299.3ms | ActiveRecord: 0.0ms)
+
+

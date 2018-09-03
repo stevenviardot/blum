@@ -815,12 +815,12 @@ p.creating{
 .nbs-flexisel-nav-left {
 	left: -45px;
 	top: 38% !important;
-	background: url(../images/themes1.png) no-repeat 1px 3px;
+	background: url(themes1.png) no-repeat 1px 3px;
 }
 .nbs-flexisel-nav-right {
 	right: -45px;
 	top: 38% !important;
-	background: url(../images/themes1.png) no-repeat -23px 3px;
+	background: url(themes1.png) no-repeat -23px 3px;
 }
 ul#flexiselDemo3.nbs-flexisel-nav-left, ul#flexiselDemo3.nbs-flexisel-nav-right {
 	width:26px;
@@ -1068,7 +1068,7 @@ ul.location li:nth-child(2) {
 .footer-social-icons ul li a{
 	width:30px;
 	height:30px;
-	background:url('../images/img-sprite.png') no-repeat 0px 0px;
+	background:url('img-sprite.png') no-repeat 0px 0px;
 	display:inline-block;
 	position: relative;
 }
@@ -1635,25 +1635,25 @@ ul.all-cat-list li a:hover {
 .app-bottom-grid i.search {
 	width:60px;
 	height:60px;
-	background:url('../images/img-sprite.png') no-repeat -720px -60px;
+	background:url('img-sprite.png') no-repeat -720px -60px;
 	display:inline-block;
 }
 .app-bottom-grid i.notifications{
 	width:60px;
 	height:60px;
-	background:url('../images/img-sprite.png') no-repeat -780px -60px;
+	background:url('img-sprite.png') no-repeat -780px -60px;
 	display:inline-block;
 }
 .app-bottom-grid i.addads{
 	width:60px;
 	height:60px;
-	background:url('../images/img-sprite.png') no-repeat -840px -60px;
+	background:url('img-sprite.png') no-repeat -840px -60px;
 	display:inline-block;
 }
 .app-bottom-grid i.getreply{
 	width:60px;
 	height:60px;
-	background:url('../images/img-sprite.png') no-repeat -900px -60px;
+	background:url('img-sprite.png') no-repeat -900px -60px;
 	display:inline-block;
 }
 .app-bottom-grid {
@@ -3500,25 +3500,25 @@ label {
 	i.postanad {
 		width: 70px;
 		height: 70px;
-		background: url('../images/img-sprite.png') no-repeat 3px -93px;
+		background: url('img-sprite.png') no-repeat 3px -93px;
 		background-size: 800px;
 	}
 	i.finditem {
 		width: 70px;
 		height: 70px;
-		background: url('../images/img-sprite.png') no-repeat -62px -93px;
+		background: url('img-sprite.png') no-repeat -62px -93px;
 		background-size: 800px;
 	}
 	i.contact-seller {
 		width: 70px;
 		height: 70px;
-		background: url('../images/img-sprite.png') no-repeat -126px -93px;
+		background: url('img-sprite.png') no-repeat -126px -93px;
 		background-size: 800px;
 	}
 	i.maketransaction {
 		width: 70px;
 		height: 70px;
-		background: url('../images/img-sprite.png') no-repeat -191px -93px;
+		background: url('img-sprite.png') no-repeat -191px -93px;
 		background-size: 800px;
 	}
 	span.arrow2 {

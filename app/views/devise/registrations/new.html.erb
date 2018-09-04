@@ -1,11 +1,14 @@
 	 <section>
 			<div id="page-wrapper" class="sign-in-wrapper">
-				<div class="graphs">
-					<div class="sign-up">
-						<h1>Créer un compte</h1>
-						<p class="creating">Having hands on experience in creating innovative designs,I do offer design
+        <div class="graphs">
+          <div class="sign-up">
+
+          	<h1>Créer un compte</h1>
+
+          	<p class="creating">Having hands on experience in creating innovative designs,I do offer design
 							solutions which harness.</p>
-						<h2>Informations</h2>
+
+          	<h2>Informations</h2>
 
             <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
               <%= devise_error_messages! %>
@@ -49,7 +52,7 @@
   							<div class="sub_home_left">
                   <div class="actions">
                     <%= f.submit "S'inscrire" %>
-                  </div>  					
+                  </div>
                   <% end %>
   							</div>
 
@@ -68,5 +71,5 @@
 			<footer class="diff">
 			   <p class="text-center">&copy 2016 Resale. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts.</a></p>
 			</footer>
-        <!--footer section end-->
+    <!--footer section end-->
 	</section>

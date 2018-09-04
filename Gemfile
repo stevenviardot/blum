@@ -65,3 +65,7 @@ gem 'fontawesome-rails', '~> 4.0', '>= 4.0.3.2'
 
 # devise
 gem 'devise'
+# carrierwave
+gem 'carrierwave'
+# mini_magick
+gem "mini_magick"

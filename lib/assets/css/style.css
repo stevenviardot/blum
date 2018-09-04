@@ -983,7 +983,7 @@ span.price:after {
 }
 .footer-bottom {
 		background-image: url('pattern-footer.jpg');
-		background-size: contain;		
+		background-size: contain;
     padding: 30px 0;
 }
 h4.footer-head {
@@ -3180,8 +3180,7 @@ pre
     text-align: right;
     margin-right: 4%;
 }
-p.post-terms {
-    margin-left: 20%;
+p.post-terms {    
     color: #000;
     font-size: 15px;
     letter-spacing: 1px;

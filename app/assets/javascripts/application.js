@@ -23,6 +23,10 @@
 //= require jquery.uls.regionfilter
 //= require jquery.uls.core
 //= require jquery.flexisel
+//= require filedrag
+//= require tabs
+//= require jquery-ui
+
 
 $(window).load(function() {
  $("#flexiselDemo3").flexisel({
@@ -47,5 +51,5 @@ $(window).load(function() {
      }
    }
  });
-
+ 
 });

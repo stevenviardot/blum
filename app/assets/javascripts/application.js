@@ -26,6 +26,7 @@
 //= require filedrag
 //= require tabs
 //= require jquery-ui
+//= require jquery.flexslider
 
 
 $(window).load(function() {
@@ -51,5 +52,5 @@ $(window).load(function() {
      }
    }
  });
- 
+
 });

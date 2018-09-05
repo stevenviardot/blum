@@ -49,35 +49,11 @@
 				<div class="trend-ads">
 					<h2>Les dernières annonces</h2>
 							<ul id="flexiselDemo3">
-								<li>
-									<% @posts[0..3].each do |post| %>
-											<div class="col-md-3 biseller-column">
-												<% link_to post do %>
-													<img src="images/p1.jpg"/>
-													<span class="price"><%= post.price %> €<span style="font-size: 10px;"> /jours</span></span>
-												<% end %>
-												<div class="ad-info">
-													<h5><%= post.title %></h5>
-													<span><%= post.created_at.strftime("%d/%m/%Y") %></span>
-												</div>
-											</div>
-									<% end %>
-								</li>
 
-								<li>
-									<% @posts[4..7].each do |post| %>
-											<div class="col-md-3 biseller-column">
-												<% link_to post do %>
-													<img src="images/p2.jpg"/>
-													<span class="price"><%= post.price %> €<span style="font-size: 10px;"> /jours</span></span>
-												<% end %>
-												<div class="ad-info">
-													<h5><%= post.title %></h5>
-													<span><%= post.created_at.strftime("%d/%m/%Y") %></span>
-												</div>
-											</div>
-									<% end %>
-								</li>
+
+
+
+								
 						</ul>
 
 					</div>

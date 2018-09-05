@@ -69,3 +69,6 @@ gem 'devise'
 gem 'carrierwave'
 # mini_magick
 gem "mini_magick"
+
+#will_paginate
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'

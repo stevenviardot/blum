@@ -1,0 +1,307 @@
+<div class="banner text-center">
+	  <div class="container">
+			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <%= link_to "Déposer une annonce", new_post_path %>
+	  </div>
+	</div>
+	<!-- Products -->
+	<div class="total-ads main-grid-border">
+		<div class="container">
+			<div class="select-box">
+				<div class="browse-category ads-list">
+					<label>Choisir une Categorie</label>
+					<select class="selectpicker show-tick" data-live-search="true">
+					  <option data-tokens="Mobiles">Toutes les catégories</option>
+					  <option data-tokens="Mobiles">Mobiles</option>
+					  <option data-tokens="Electronics & Appliances">Electronics & Appliances</option>
+					  <option data-tokens="Cars">Cars</option>
+					</select>
+				</div>
+				<div class="search-product ads-list">
+					<label>Recherche un produit</label>
+					<div class="search">
+						<div id="custom-search-input">
+						<div class="input-group">
+							<input type="text" class="form-control input-lg" placeholder="Ipad" />
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-lg" type="button">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</span>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<ol class="breadcrumb" style="margin-bottom: 5px;">
+			  <li><%= link_to "Accueil", root_path %></li>
+			  <li class="active">Toutes les annonces</li>
+			</ol>
+			<div class="ads-grid">
+				<div class="side-bar col-md-3">
+					<div class="search-hotel">
+					<h3 class="sear-head">Recherche</h3>
+					<form>
+						<input type="text" value="Produit..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Product name...';}" required="">
+						<input type="submit" value=" ">
+					</form>
+				</div>
+
+				<div class="range">
+					<h3 class="sear-head">Price range</h3>
+							<ul class="dropdown-menu6">
+								<li>
+
+									<div id="slider-range"></div>
+										<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+									</li>
+							</ul>
+							<!---->
+
+				</div>
+				<div class="featured-ads">
+					<h2 class="sear-head fer">Featured Ads</h2>
+					<div class="featured-ad">
+						<a href="single.html">
+							<div class="featured-ad-left">
+								<img src="images/f1.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4>Lorem Ipsum is simply dummy text of the printing industry</h4>
+								<p>$ 450</p>
+							</div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="featured-ad">
+						<a href="single.html">
+							<div class="featured-ad-left">
+								<img src="images/f2.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4>Lorem Ipsum is simply dummy text of the printing industry</h4>
+								<p>$ 380</p>
+							</div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="featured-ad">
+						<a href="single.html">
+							<div class="featured-ad-left">
+								<img src="images/f3.jpg" title="ad image" alt="" />
+							</div>
+							<div class="featured-ad-right">
+								<h4>Lorem Ipsum is simply dummy text of the printing industry</h4>
+								<p>$ 560</p>
+							</div>
+							<div class="clearfix"></div>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				</div>
+				<div class="ads-display col-md-9">
+					<div class="wrapper">
+					<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					  <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+						<li role="presentation" class="active">
+						  <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+							<span class="text">Toutes les annonces</span>
+						  </a>
+						</li>
+						<li role="presentation" class="next">
+						  <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+							<span class="text">Annonces avec photos</span>
+						  </a>
+						</li>
+					  </ul>
+					  <div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+						   <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>view :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Sort By : </label>
+										<select>
+														<option value="">Les plus récents</option>
+														<option value="">Tri: Prix croissants</option>
+														<option value="">Tri: Prix décroissants</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+                <% @posts.each do |post| %>
+                  <%= link_to post do %>
+                    <li>
+                      <img src="images/m13.jpg" title="" alt="" />
+      									<section class="list-left">
+      									<h5 class="title">
+                          <%= post.title %>
+                        </h5>
+      									<span class="adprice">
+                          <%= post.price %> €<span style="font-size: 15px;"> /jours</span>
+                        </span>
+      									<p class="catpath">Mobile Phones » Brand</p>
+      									</section>
+      									<section class="list-right">
+      									<span class="date">
+                          <%= post.created_at.strftime("%d/%m/%Y") %>
+                        </span>
+      									<span class="cityname">
+                          <%= post.location %>
+                        </span>
+      									</section>
+      									<div class="clearfix"></div>
+                      </li>
+                  <% end %>
+                <% end %>
+							</ul>
+						</div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+						 <div>
+												<div id="container">
+								<div class="view-controls-list" id="viewcontrols">
+									<label>view :</label>
+									<a class="gridview"><i class="glyphicon glyphicon-th"></i></a>
+									<a class="listview active"><i class="glyphicon glyphicon-th-list"></i></a>
+								</div>
+								<div class="sort">
+								   <div class="sort-by">
+										<label>Sort By : </label>
+										<select>
+                      <option value="">Les plus récents</option>
+                      <option value="">Tri: Prix croissants</option>
+                      <option value="">Tri: Prix décroissants</option>
+										</select>
+									   </div>
+									 </div>
+								<div class="clearfix"></div>
+							<ul class="list">
+                <% @posts.each do |post| %>
+                  <%= link_to post do %>
+                    <li>
+                      <img src="images/m13.jpg" title="" alt="" />
+      									<section class="list-left">
+      									<h5 class="title">
+                          <%= post.title %>
+                        </h5>
+      									<span class="adprice">
+                          <%= post.price %> €<span style="font-size: 15px;"> /jours</span>
+                        </span>
+      									<p class="catpath">Mobile Phones » Brand</p>
+      									</section>
+      									<section class="list-right">
+      									<span class="date">
+                          <%= post.created_at.strftime("%d/%m/%Y") %>
+                        </span>
+      									<span class="cityname">
+                          <%= post.location %>
+                        </span>
+      									</section>
+      									<div class="clearfix"></div>
+                      </li>
+                  <% end %>
+                <% end %>
+							</ul>
+						</div>
+							</div>
+						</div>
+
+						<%= will_paginate @posts, previous_label: "Précédent", next_label: "Suivant", inner_window: 1 %>
+
+					  </div>
+					</div>
+				</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- // Products -->
+	<!--footer section start-->
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Who We Are</h4>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+							<p>The point of using Lorem Ipsum is that it has a more-or-less normal letters, as opposed to using 'Content here.</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Help</h4>
+							<ul>
+								<li><a href="howitworks.html">How it Works</a></li>
+								<li><a href="sitemap.html">Sitemap</a></li>
+								<li><a href="faq.html">Faq</a></li>
+								<li><a href="feedback.html">Feedback</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="typography.html">Shortcodes</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Information</h4>
+							<ul>
+								<li><a href="regions.html">Locations Map</a></li>
+								<li><a href="terms.html">Terms of Use</a></li>
+								<li><a href="popular-search.html">Popular searches</a></li>
+								<li><a href="privacy.html">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+							<span class="hq">Our headquarters</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
+									<div class="clearfix"></div>
+								</ul>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+0 561 111 235</li>
+									<div class="clearfix"></div>
+								</ul>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">mail@example.com</a></li>
+									<div class="clearfix"></div>
+								</ul>
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html"><span>B</span>lum</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+						<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+						<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
+        <!--footer section end-->

@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post.user = current_user    
+    @post.user = current_user
   end
 
   # GET /posts/new
@@ -74,6 +74,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :description, :location)
+      params.require(:post).permit(:title, :description, :location, :price)
     end
 end

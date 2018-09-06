@@ -72,7 +72,7 @@
 						<div class="tips">
 						<h4>Gérer mon annonce</h4>
 							<ul>
-                <% if @post.user_id = current_user %>
+                <% if @post.user == current_user %>
                   <li><%= link_to 'Modifier mon annonce', edit_post_path(@post) %></li>
                   <li><%= link_to 'Supprimer', @post, method: :delete, data: { confirm: 'sure?' } %></li>
                 <% end %>

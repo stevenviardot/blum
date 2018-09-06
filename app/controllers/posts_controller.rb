@@ -5,12 +5,15 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all.paginate(:page => params[:page], :per_page => 5)
+    if user_signed_in?
+      @posts = Post.where(:user_id => current_user).order("created_at DESC")
+    end
   end
 
   # GET /posts/1
   # GET /posts/1.json
-  def show    
+  def show
+    @post.user = current_user    
   end
 
   # GET /posts/new

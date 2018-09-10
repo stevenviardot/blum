@@ -1,4 +1,4 @@
-https://blum.herokuapp.com/
+https://blum-v2.herokuapp.com/
 
 compte user : user@user.com / useruser
 

@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
+
   def home
     @posts = Post.all.order("created_at DESC")
+    @rents = Rent.all
   end
 
   def offers
@@ -9,4 +11,5 @@ class PagesController < ApplicationController
 
   def contact
   end
+
 end

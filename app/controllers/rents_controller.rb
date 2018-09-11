@@ -8,8 +8,8 @@ class RentsController < ApplicationController
     end
   end
 
-  def show
-    @rents = Rent.all
+  def show    
+    @rent = Rent.find(params[:id])
   end
 
   def new

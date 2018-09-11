@@ -26,7 +26,7 @@
 		        <td><%= rent.body %></td>
 		        <td><%= rent.delivery_adress %></td>
 		        <td><%= rent.delivery_time %></td>
-		        <td><%= link_to 'Voir', post_rent_path %></td>
+		        <td><%= link_to 'Voir', post_rent_path(@post, rent) %></td>
 		      </tr>
 			  </tbody>
 			<% end %>

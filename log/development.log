@@ -56868,3 +56868,667 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 174ms (Views: 148.6ms | ActiveRecord: 17.6ms)
 
 
+  [1m[36mRent Load (1.7ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:48:00 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  Rendered pages/renting_list.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (45.8ms)
+Completed 200 OK in 243ms (Views: 212.7ms | ActiveRecord: 23.8ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:49:38 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  Rendered pages/renting_list.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/steven/Desktop/projet-thp/projet-final/blum/app/views/pages/renting_list.html.erb:5: syntax error, unexpected keyword_end
+...eze;@output_buffer.append=( end );@output_buffer.safe_append...
+...                            ^~~
+/Users/steven/Desktop/projet-thp/projet-final/blum/app/views/pages/renting_list.html.erb:9: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/steven/Desktop/projet-thp/projet-final/blum/app/views/pages/renting_list.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/pages/renting_list.html.erb:5: syntax error, unexpected keyword_end
+app/views/pages/renting_list.html.erb:9: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/pages/renting_list.html.erb:11: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:49:48 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mRent Load (0.6ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (14.4ms)
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (18.1ms)
+Completed 200 OK in 168ms (Views: 145.3ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:50:08 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mRent Load (0.3ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 79ms (Views: 74.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:50:50 +0200
+Processing by PagesController#renting_list as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rent' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:8:in `renting_list'
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:50:55 +0200
+Processing by PagesController#renting_list as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `rents' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:8:in `renting_list'
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:51:08 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mRent Load (0.4ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (18.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (47.3ms)
+Completed 200 OK in 197ms (Views: 174.6ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:51:31 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mRent Load (0.3ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (14.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (27.2ms)
+Completed 200 OK in 167ms (Views: 146.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:51:48 +0200
+Processing by PagesController#renting_list as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/steven/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY created_at DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/steven/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+NoMethodError (undefined method `rents' for #<Post::ActiveRecord_Relation:0x00007fd70efa4668>):
+  
+app/controllers/pages_controller.rb:9:in `renting_list'
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRent Load (0.4ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."post_id" = $1 LIMIT $2[0m  [["post_id", 1], ["LIMIT", 11]]
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:53:50 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (28.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (33.0ms)
+Completed 200 OK in 185ms (Views: 149.7ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:54:24 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:3
+  Rendered pages/renting_list.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (6.1ms)
+Completed 200 OK in 124ms (Views: 117.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:54:38 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  Rendered pages/renting_list.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (6.1ms)
+Completed 200 OK in 187ms (Views: 182.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:55:45 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (1.6ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (33.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.6ms)
+Completed 200 OK in 350ms (Views: 333.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:56:41 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.3ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 131ms (Views: 126.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:57:00 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.3ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.2ms)
+Completed 200 OK in 119ms (Views: 114.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 17:58:15 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.3ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.4ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1/rents/8" for 127.0.0.1 at 2018-09-11 17:58:19 +0200
+Processing by RentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"8"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[36mRent Load (0.5ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:12
+  Rendering rents/show.html.erb within layouts/application
+  Rendered rents/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 142ms (Views: 122.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts/1/rents/7" for 127.0.0.1 at 2018-09-11 17:58:25 +0200
+Processing by RentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"7"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[36mRent Load (0.8ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:12
+  Rendering rents/show.html.erb within layouts/application
+  Rendered rents/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 103ms (Views: 85.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/posts/1/rents/6" for 127.0.0.1 at 2018-09-11 17:58:31 +0200
+Processing by RentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[36mRent Load (3.8ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:12
+  Rendering rents/show.html.erb within layouts/application
+  Rendered rents/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 94ms (Views: 82.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 18:00:27 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.7ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 124ms (Views: 118.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-09-11 18:00:30 +0200
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:8
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 3]]
+  ↳ app/views/posts/index.html.erb:27
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 150ms (Views: 137.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 18:00:32 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (5.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.8ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (10.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (3.9ms)
+Completed 200 OK in 172ms (Views: 160.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/offres" for 127.0.0.1 at 2018-09-11 18:00:36 +0200
+Processing by PagesController#offers as HTML
+  Rendering pages/offers.html.erb within layouts/application
+  [1m[36mPost Load (8.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/pages/offers.html.erb:141
+  Rendered pages/offers.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 173ms (Views: 158.2ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/images/f3.jpg" for 127.0.0.1 at 2018-09-11 18:00:36 +0200
+Started GET "/images/m13.jpg" for 127.0.0.1 at 2018-09-11 18:00:36 +0200
+Started GET "/images/f1.jpg" for 127.0.0.1 at 2018-09-11 18:00:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/f3.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/images/f2.jpg" for 127.0.0.1 at 2018-09-11 18:00:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/m13.jpg"):
+  
+ActionController::RoutingError (No route matches [GET] "/images/f2.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/images/f1.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/1" for 127.0.0.1 at 2018-09-11 18:00:38 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (40.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:72
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:16
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (163.5ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 536ms (Views: 291.9ms | ActiveRecord: 46.7ms)
+
+
+Started GET "/posts/images/f2.jpg" for 127.0.0.1 at 2018-09-11 18:00:39 +0200
+Started GET "/posts/images/m13.jpg" for 127.0.0.1 at 2018-09-11 18:00:39 +0200
+Started GET "/posts/images/f3.jpg" for 127.0.0.1 at 2018-09-11 18:00:39 +0200
+Started GET "/posts/images/f1.jpg" for 127.0.0.1 at 2018-09-11 18:00:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/posts/images/f3.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/posts/images/f2.jpg"):
+  
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/posts/images/m13.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/posts/images/f1.jpg"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/1/rents/new" for 127.0.0.1 at 2018-09-11 18:00:41 +0200
+Processing by RentsController#new as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mUser Load (41.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  Rendering rents/new.html.erb within layouts/application
+  Rendered rents/_form.html.erb (2.9ms)
+  Rendered rents/new.html.erb within layouts/application (46.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 325ms (Views: 193.3ms | ActiveRecord: 44.1ms)
+
+
+Started POST "/posts/1/rents" for 127.0.0.1 at 2018-09-11 18:00:51 +0200
+Processing by RentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wuU5VsGWun+4yl3eDbLXHOSdj0QDgDJ56isEHeCP+m0fw9RYbt1/mcQaQCC9WJ1ntoS18pRkYUG2juSA+wDPeg==", "rent"=>{"body"=>"test rent 7", "delivery_adress"=>"test rent 7", "delivery_time"=>"test rent 7"}, "commit"=>"Create Rent", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[35m (2.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rents_controller.rb:20
+  [1m[36mRent Create (2.3ms)[0m  [1m[32mINSERT INTO "rents" ("body", "delivery_adress", "delivery_time", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["body", "test rent 7"], ["delivery_adress", "test rent 7"], ["delivery_time", "test rent 7"], ["post_id", 1], ["created_at", "2018-09-11 16:00:51.390109"], ["updated_at", "2018-09-11 16:00:51.390109"]]
+  ↳ app/controllers/rents_controller.rb:20
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rents_controller.rb:20
+Redirected to http://localhost:3000/posts/1/rents
+Completed 302 Found in 18ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/posts/1/rents" for 127.0.0.1 at 2018-09-11 18:00:51 +0200
+Processing by RentsController#index as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  Rendering rents/index.html.erb within layouts/application
+  [1m[36mRent Load (0.7ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/rents/index.html.erb:23
+  Rendered rents/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 127ms (Views: 120.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/1/rents/9" for 127.0.0.1 at 2018-09-11 18:00:55 +0200
+Processing by RentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[36mRent Load (0.4ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:12
+  Rendering rents/show.html.erb within layouts/application
+  Rendered rents/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 158ms (Views: 140.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-09-11 18:00:57 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+Completed 200 OK in 193ms (Views: 187.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/mes-locations" for 127.0.0.1 at 2018-09-11 18:00:58 +0200
+Processing by PagesController#renting_list as HTML
+  Rendering pages/renting_list.html.erb within layouts/application
+  [1m[36mPost Load (8.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  ↳ app/views/pages/renting_list.html.erb:4
+  [1m[36mRent Load (0.4ms)[0m  [1m[34mSELECT "rents".* FROM "rents"[0m
+  ↳ app/views/pages/renting_list.html.erb:5
+  Rendered pages/renting_list.html.erb within layouts/application (14.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/_header.html.erb:7
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 151ms (Views: 138.2ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/posts/1/rents/9" for 127.0.0.1 at 2018-09-11 18:01:01 +0200
+Processing by RentsController#show as HTML
+  Parameters: {"post_id"=>"1", "id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/steven/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:32
+  [1m[36mRent Load (3.7ms)[0m  [1m[34mSELECT  "rents".* FROM "rents" WHERE "rents"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/rents_controller.rb:12
+  Rendering rents/show.html.erb within layouts/application
+  Rendered rents/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+Completed 200 OK in 127ms (Views: 115.1ms | ActiveRecord: 4.7ms)
+
+

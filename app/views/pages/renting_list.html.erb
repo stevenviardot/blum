@@ -1,0 +1,13 @@
+<h1>renting list</h1>
+
+<div class="infos">
+  <% @posts.each do |post| %>
+    <% @rents.each do |rent| %>
+      <ul>
+        <li>
+          <%= post.title %> / <%= rent.body %> / <%= link_to 'Voir', post_rent_path(post, rent) %>
+        </li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>

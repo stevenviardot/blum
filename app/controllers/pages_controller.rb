@@ -2,6 +2,10 @@ class PagesController < ApplicationController
 
   def home
     @posts = Post.all.order("created_at DESC")
+  end
+
+  def renting_list
+    @posts = Post.all.order("created_at DESC")
     @rents = Rent.all
   end
 

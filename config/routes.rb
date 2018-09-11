@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :rents
+  end
+
   devise_for :users
   root 'pages#home'
   get 'pages/contact'

@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
-    @post.user = current_user
+    @post.user_id = current_user
   end
 
   # GET /posts/new

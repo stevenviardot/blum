@@ -66,8 +66,11 @@
 						</div>
 					</div>
 					<div class="interested text-center">
-						<h4>Interested in this Ad?<small> Contact the Seller!</small></h4>
-						<p><i class="glyphicon glyphicon-earphone"></i>00-85-9875462655</p>
+						<% if (current_user.id != @post.user_id) %>
+							<h4><%= link_to 'Faire un réservation', new_post_rent_path(@post) %></h4>
+						<% else %>
+							<h4>Vous êtes le createur de l'annonce </h4>
+						<% end %>
 					</div>
 						<div class="tips">
 						<h4>Gérer mon annonce</h4>

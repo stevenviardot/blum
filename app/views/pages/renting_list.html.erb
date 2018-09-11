@@ -1,3 +1,11 @@
+<div class="banner text-center">
+	  <div class="container">
+			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <%= link_to "Déposer une annonce", new_post_path %>
+	  </div>
+	</div>
+
 <h1>renting list</h1>
 
 <div class="infos">
@@ -5,8 +13,21 @@
     <% @rents.each do |rent| %>
       <ul>
         <li>
-          <%= post.title %> / <%= rent.body %> / <%= link_to 'Voir', post_rent_path(post, rent) %>
+          titre du poste : <%= post.title %>   / <%= link_to 'Voir', post_rent_path(post, rent) %>
         </li>
+        <hr>
+        <li>
+          createur du post : <%= post.user %>
+        </li>
+        <hr>
+        <li>
+          numero de location :<%= rent.id %>
+        </li>
+        <hr>
+        <li>
+          message de la demande de location : <%= rent.body %>
+        </li>
+        <hr>
       </ul>
     <% end %>
   <% end %>

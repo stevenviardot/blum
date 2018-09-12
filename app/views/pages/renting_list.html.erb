@@ -11,24 +11,26 @@
 <div class="infos">
   <% @posts.each do |post| %>
     <% @rents.each do |rent| %>
-      <ul>
-        <li>
-          titre du poste : <%= post.title %>   / <%= link_to 'Voir', post_rent_path(post, rent) %>
-        </li>
-        <hr>
-        <li>
-          createur du post : <%= post.user %>
-        </li>
-        <hr>
-        <li>
-          numero de location :<%= rent.id %>
-        </li>
-        <hr>
-        <li>
-          message de la demande de location : <%= rent.body %>
-        </li>
-        <hr>
-      </ul>
+
+	      <ul>
+	        <li>
+	          titre du poste : <%= post.title %>   / <%= link_to 'Voir', post_rent_path(post, rent) %>
+	        </li>
+	        <hr>
+	        <li>
+	          createur du post : <%= post.user.email %>
+	        </li>
+	        <hr>
+	        <li>
+	          numero de location :<%= rent.id %>
+	        </li>
+	        <hr>
+	        <li>
+	          message de la demande de location : <%= rent.body %>
+	        </li>
+	        <hr>
+	      </ul>
+			
     <% end %>
   <% end %>
 </div>

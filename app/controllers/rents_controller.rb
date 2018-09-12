@@ -4,11 +4,12 @@ class RentsController < ApplicationController
 
   def index
     if user_signed_in?
-      @rents = Rent.all
+      @posts = Post.where(:user_id => current_user).order("created_at DESC")
+      @rents = Rent.where(:user_id => current_user).order("created_at DESC")
     end
   end
 
-  def show    
+  def show
     @rent = Rent.find(params[:id])
   end
 
@@ -18,6 +19,8 @@ class RentsController < ApplicationController
 
   def create
    @rent = @post.rents.create(rent_params)
+   @rent.user_id = current_user.id
+   @rent.save
    redirect_to post_rents_path(@post)
   end
 

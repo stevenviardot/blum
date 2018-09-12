@@ -67,7 +67,7 @@
 						</div>
 					</div>
 					<div class="interested text-center">
-						<% if (@post.user_id != current_user.id) %>
+						<% if @post.user_id != current_user %>
 							<h4><%= link_to 'Faire un réservation', new_post_rent_path(@post) %></h4>
 						<% else %>
 							<h4>Vous êtes le createur de l'annonce </h4>
@@ -76,7 +76,7 @@
 						<div class="tips">
 						<h4>Gérer mon annonce</h4>
 							<ul>
-                <% if @post.user_id == current_user.id %>
+                <% if @post.user_id == current_user %>
                   <li><%= link_to 'Modifier mon annonce', edit_post_path(@post) %></li>
                   <li><%= link_to 'Supprimer', @post, method: :delete, data: { confirm: 'sure?' } %></li>
                 <% end %>

@@ -2,11 +2,7 @@ class RentsController < ApplicationController
   before_action :authenticate_user!
   before_action :get_post
 
-  def index
-    if user_signed_in?
-      @posts = Post.where(:user_id => current_user).order("created_at DESC")
-      @rents = Rent.where(:user_id => current_user).order("created_at DESC")
-    end
+  def index    
   end
 
   def show
@@ -19,6 +15,8 @@ class RentsController < ApplicationController
 
   def create
    @rent = @post.rents.create(rent_params)
+
+   @rent.recipient = @post.user_id
    @rent.user_id = current_user.id
    @rent.save
    redirect_to post_rents_path(@post)

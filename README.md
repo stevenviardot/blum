@@ -15,3 +15,5 @@ end
 
 - le mec qui a créer le post en question
 - le mec qui a créer la rent request
+
+recioient : @rent.recipient = @post.user_id

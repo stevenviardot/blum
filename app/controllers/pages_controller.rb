@@ -5,8 +5,11 @@ class PagesController < ApplicationController
   end
 
   def renting_list
-    @posts = Post.all.order("created_at DESC")
-    @rents = Rent.where(:user_id => current_user).order("created_at DESC")
+    if user_signed_in?
+      @posts = Post.all
+      @rents = Rent.where(:user_id => current_user).order("created_at DESC")
+      @rentings = Rent.where(:recipient => current_user).order("created_at DESC") 
+    end
   end
 
   def offers

@@ -223,6 +223,9 @@ span.active.uls-trigger {
     color: #6D6D6D;
     margin-top: 26px;
 }
+span.active.uls-trigger a {
+    color: #aeaeae;	   
+}
 .selectregion {
     float: left;
 }
@@ -975,7 +978,7 @@ span.price:after {
 }
 .footer-top {
     padding: 60px 0;
-		background-image: url(pattern-footer.jpg);		
+		background-image: url(pattern-footer.jpg);
 }
 .footer-bottom p {
     margin: 20px 0 0 0;

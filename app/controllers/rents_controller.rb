@@ -2,7 +2,8 @@ class RentsController < ApplicationController
   before_action :authenticate_user!
   before_action :get_post
 
-  def index    
+  def index
+    @rents = Rent.where(:user_id => current_user).order("created_at DESC")   
   end
 
   def show

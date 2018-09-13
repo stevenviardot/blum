@@ -975,6 +975,7 @@ span.price:after {
 }
 .footer-top {
     padding: 60px 0;
+		background-image: url(pattern-footer.jpg);		
 }
 .footer-bottom p {
     margin: 20px 0 0 0;
@@ -3180,7 +3181,7 @@ pre
     text-align: right;
     margin-right: 4%;
 }
-p.post-terms {    
+p.post-terms {
     color: #000;
     font-size: 15px;
     letter-spacing: 1px;

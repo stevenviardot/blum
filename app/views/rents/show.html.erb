@@ -1,11 +1,26 @@
 <%= render "layouts/banner" %>
-	<!--single-page-->
 
 
-<div class="infos">
-	<%= @post.title %><br>
-	<%= @rent.body %>
+<div class="container" style="padding: 80px 0px;">
+	<h2 class="text-center"> Ma location</h2>
 
+	<br>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Titre</th>
+        <th scope="col">Message </th>        
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><%= @post.title %></td>
+        <td><%= @rent.body %></td>
+      </tr>
+    </tbody>
+	</table>
 </div>
 
 <%= render "layouts/footer" %>

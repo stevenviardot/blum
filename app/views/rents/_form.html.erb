@@ -1,21 +1,54 @@
-<h1>form</h1>
+<br>
+
+<div class="submit-ad main-grid-border">
+  <div class="container">
+    <h2 class="head">Réserver l'objet</h2>
+
 <%= form_for([@post, @post.rents.build]) do |f| %>
-  <p>
-    <%= f.label :message %>
-    <%= f.text_field :body %>
-  </p>
 
-  <p>
-    <%= f.label :adresse_de_livraison %>
-    <%= f.text_field :delivery_adress %>
-  </p>
+  <div class="post-ad-form">
 
-  <p>
-    <%= f.label :date_de_livraison %>
-    <%= f.text_field :delivery_time %>
-  </p>
+    <div class="clearfix"></div>
 
-  <p>
-    <%= f.submit %>    
-  </p>
+    <div>
+      <label>
+        <%= f.label :message %>
+      </label>
+    </div>
+    <div>
+      <%= f.text_field :body, class: "phone" %>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div>
+      <label>
+        <%= f.label :adresse_de_livraison %>
+      </label>
+    </div>
+    <div>
+      <%= f.text_field :delivery_adress, class: "phone" %>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div>
+      <label>
+        <%= f.label :date_de_livraison %>
+      </label>
+    </div>
+    <div>
+      <%= f.text_field :delivery_time, class: "phone" %>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="actions" style="float: left;">
+      <%= f.submit %>
+    </div>
+
+    <div class="clearfix"></div>
+    </div>
+  </div>
 <% end %>
+<br>

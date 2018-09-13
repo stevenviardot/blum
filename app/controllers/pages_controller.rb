@@ -1,6 +1,15 @@
 class PagesController < ApplicationController
+
   def home
     @posts = Post.all.order("created_at DESC")
+  end
+
+  def renting_list
+    if user_signed_in?
+      @posts = Post.all
+      @rents = Rent.where(:user_id => current_user).order("created_at DESC")
+      @rents_recipient = Rent.where(:recipient => current_user).order("created_at DESC")
+    end
   end
 
   def offers
@@ -9,4 +18,5 @@ class PagesController < ApplicationController
 
   def contact
   end
+
 end

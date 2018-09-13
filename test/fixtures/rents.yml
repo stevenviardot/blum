@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyText
+  delivery_adress: MyString
+  delivery_time: MyString
+  post: one
+
+two:
+  body: MyText
+  delivery_adress: MyString
+  delivery_time: MyString
+  post: two

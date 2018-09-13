@@ -1,0 +1,21 @@
+<h1>form</h1>
+<%= form_for([@post, @post.rents.build]) do |f| %>
+  <p>
+    <%= f.label :message %>
+    <%= f.text_field :body %>
+  </p>
+
+  <p>
+    <%= f.label :adresse_de_livraison %>
+    <%= f.text_field :delivery_adress %>
+  </p>
+
+  <p>
+    <%= f.label :date_de_livraison %>
+    <%= f.text_field :delivery_time %>
+  </p>
+
+  <p>
+    <%= f.submit %>    
+  </p>
+<% end %>

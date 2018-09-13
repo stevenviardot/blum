@@ -21,13 +21,16 @@
 					 <span class="active uls-trigger">
 						 <%= link_to('Mes annonces', posts_path) %>
 					 </span>
+					 <span class="active uls-trigger">
+						 <%= link_to('Mes locations', renting_list_path) %>
+					 </span>
            <span class="active uls-trigger">
              <%= link_to('Mon compte', edit_user_registration_path) %>
            </span>
            <span class="active uls-trigger">
              <%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
            </span>
-         <% else %>					 					 
+         <% else %>
            <%= link_to('Inscription', new_user_registration_path, class: "account") %>
            <span class="active uls-trigger">
              <%= link_to('Se connecter', new_user_session_path) %>

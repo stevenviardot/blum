@@ -38,7 +38,7 @@
 
 <div class="infos">
   <% @posts.each do |post| %>
-    <% @rentings.each do |rent| %>
+    <% @rents_recipient.each do |rent| %>
 
 	      <ul>
 	        <li>
@@ -58,6 +58,9 @@
 	          message de la demande de location : <%= rent.body %>
 	        </li>
 	        <hr>
+					<li>
+						<%= link_to "validé"%>
+					</li>
 	      </ul>
 
     <% end %>

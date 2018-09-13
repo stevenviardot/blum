@@ -8,7 +8,7 @@ class PagesController < ApplicationController
     if user_signed_in?
       @posts = Post.all
       @rents = Rent.where(:user_id => current_user).order("created_at DESC")
-      @rentings = Rent.where(:recipient => current_user).order("created_at DESC") 
+      @rents_recipient = Rent.where(:recipient => current_user).order("created_at DESC")
     end
   end
 

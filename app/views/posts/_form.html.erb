@@ -19,7 +19,7 @@
 
   			<div class="post-ad-form">
   				<form>
-  					<label>Select Category <span>*</span></label>
+  					<label>Choisir une catégorie<span>*</span></label>
   					<select class="">
   					  <option>Choisir une Categorie</option>
   					  <option>Mobiles</option>
@@ -33,7 +33,7 @@
 
             <div>
               <label>
-                <%= form.label :title %><span>*</span>
+                <%= form.label :titre_de_votre_annonce %><span>*</span>
               </label>
             </div>
             <div>
@@ -51,8 +51,18 @@
 
 						<div class="clearfix"></div>
 
+						<div>
+							<label><%= form.label :dans_quelle_condition_est_votre_objet %>? <span>*</span></label>
+						</div>
+						<div>
+							<%= form.text_field :state, class: "phone" %>
+						</div>
+
+						<div class="clearfix"></div>
+
+
             <div>
-              <label><%= form.label :tarif %> <span>*</span></label>
+              <label><%= form.label :tarif_journalier %> <span>*</span></label>
             </div>
   					<div>
               <%= form.text_field :price, class: "phone" %>
@@ -69,7 +79,7 @@
 
   					<div class="clearfix"></div>
   					<div class="personal-details">
-  						<p class="post-terms">En cliquant sur <strong>Déposer une annonce</strong> Vous acceptez nos <a href="terms.html" target="_blank">Terms of Use </a> et nos <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+  						<p class="post-terms">En cliquant sur <strong>Déposer une annonce</strong> vous acceptez nos <a href="terms.html" target="_blank">Terms of Use </a> et nos <a href="privacy.html" target="_blank">Privacy Policy</a></p>
   					</div>
 
 						<div class="actions" style="float: left;">

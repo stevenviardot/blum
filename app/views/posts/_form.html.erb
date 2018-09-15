@@ -18,14 +18,12 @@
         <% end %>
 
   			<div class="post-ad-form">
-  				<form>
-  					<label>Choisir une catégorie<span>*</span></label>
-  					<select class="">
-  					  <option>Choisir une Categorie</option>
-  					  <option>Mobiles</option>
-  					  <option>Electronics and Appliances</option>
-  					  <option>Jeux videos</option>
-  					</select>
+  				<form>						
+            <div>
+              <%= form.collection_select :category_id, Category.all, :id, :name, { prompt: "Toutes nos categories" }, class: "phone" %>
+            </div>
+
+            <div class="clearfix"></div>
 
             <hr>
 

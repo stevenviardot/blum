@@ -11,7 +11,7 @@
 			<ol class="breadcrumb" style="margin-bottom: 5px;">
 				<li><%= link_to "Accueil", root_path %></li>
 				<li><%= link_to "Toutes les annonces", posts_path %></a></li>
-				<li class="active"><a href="mobiles.html">Mobiles</a></li>
+				<li class="active"><%= @post.category.name %></li>
 				<li class="active"><%= @post.title %></li>
 			</ol>
 			<div class="product-desc">
@@ -61,8 +61,8 @@
 							<div class="clearfix"></div>
 						</div>
 						<div class="itemtype">
-							<p class="p-price">Item Type</p>
-							<h4>Phones</h4>
+							<p class="p-price">Catégorie</p>
+							<h4><%= @post.category.name %></h4>
 							<div class="clearfix"></div>
 						</div>
 					</div>

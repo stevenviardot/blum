@@ -224,7 +224,7 @@ span.active.uls-trigger {
     margin-top: 26px;
 }
 span.active.uls-trigger a {
-    color: #aeaeae;	   
+    color: #aeaeae;
 }
 .selectregion {
     float: left;
@@ -2245,7 +2245,7 @@ h3.rate {
 
 /*-- products-page --*/
 .ads-list {
-	width:33.333%;
+	width:100%;
 	float:left;
 }
 .select-box {
@@ -2288,7 +2288,7 @@ h3.rate {
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     background-color: #fff;
-    width: 80%;
+    width: 100%;
     color: #000;
 }
 

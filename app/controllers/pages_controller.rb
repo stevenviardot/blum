@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
   def home
+    @categories = Category.all
     @posts = Post.all.order("created_at DESC")
   end
 
@@ -13,7 +14,13 @@ class PagesController < ApplicationController
   end
 
   def offers
-    @posts = Post.all.paginate(:page => params[:page], :per_page => 5)
+    if params[:category].blank?
+      @posts = Post.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @posts = Post.where(:category_id => @category_id).order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    end
+
   end
 
   def contact

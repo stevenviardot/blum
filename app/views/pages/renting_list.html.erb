@@ -17,7 +17,7 @@
         <th scope="col">createur du post</th>
       </tr>
     </thead>
-		
+
 <!-- if current_user == demandeur -->
   <% @posts.each do |post| %>
     <% @rents.each do |rent| %>
@@ -27,7 +27,13 @@
           <td><%= post.title %></td>
           <td><%= post.user.email %></td>
           <td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
-          <td><%= link_to "validé"%></td>
+					<% if rent.activated == true %>
+						<td style="color: green;">Validé</td>
+					<% elsif rent.activated == false %>
+						<td style="color: red;">Refusée</td>
+					<% else rent.activated == nil %>
+						<td style="color: grey;">En attente</td>
+					<% end %>
         </tr>
       </tbody>
     <% end %>
@@ -40,7 +46,11 @@
           <td><%= post.title %></td>
           <td><%= post.user.email %></td>
           <td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
-          <td><%= link_to "validé"%></td>
+					<% if rent.activated == true %>
+						<td style="color: green;">Validé</td>
+					<% elsif rent.activated == false %>
+						<td style="color: red;">Refusée</td>
+					<% end %>
         </tr>
       </tbody>
     <% end %>

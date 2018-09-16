@@ -841,6 +841,7 @@ ul#flexiselDemo3.nbs-flexisel-nav-left, ul#flexiselDemo3.nbs-flexisel-nav-right 
 	-webkit-box-shadow: 0 0 10px #F9F9F9;
 	-moz-box-shadow: 0 0 10px #F9F9F9;
 	box-shadow: 0 0 10px #F9F9F9;
+	height: 160px;
 }
 .biseller-column a {
     display: block;

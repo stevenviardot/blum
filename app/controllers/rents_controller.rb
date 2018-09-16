@@ -3,7 +3,7 @@ class RentsController < ApplicationController
   before_action :get_post
 
   def index
-    @rents = Rent.where(:user_id => current_user).order("created_at DESC")   
+    @rents = Rent.where(:user_id => current_user).order("created_at DESC")
   end
 
   def show
@@ -18,7 +18,7 @@ class RentsController < ApplicationController
    @rent = @post.rents.create(rent_params)
 
    @rent.recipient = @post.user_id
-   @rent.user_id = current_user.id
+   @rent.user_id = current_user   
    @rent.save
    redirect_to post_rents_path(@post)
   end

@@ -1,10 +1,4 @@
-<div class="banner text-center">
-	  <div class="container">
-			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-			<%= link_to "Déposez une annonce", new_post_path %>
-	  </div>
-	</div>
+	<%= render "layouts/banner" %>
 	<!--single-page-->
 	<div class="single-page main-grid-border">
 		<div class="container">
@@ -26,7 +20,7 @@
 						</ul>
 					</div>
 
-        
+
           <br>
           <hr>
 					<div class="product-details">
@@ -38,7 +32,7 @@
 					<div class="item-price">
 						<div class="product-price">
 							<p class="p-price">Tarif journaliers</p>
-							<h3 class="rate"><%= @post.price %> €</h3>
+							<h3 class="rate"><%= number_to_currency @post.price, unit: "€", separator: ",", format: "%n%u" %></h3>
 							<div class="clearfix"></div>
 						</div>
 						<div class="condition">
@@ -59,12 +53,16 @@
 							<h4>Vous êtes le createur de l'annonce </h4>
 						<% end %>
 					</div>
-						<div class="tips">
+						<div class="tips text-center">
 						<h4>Gérer mon annonce</h4>
 							<ul>
-                <% if @post.user_id == current_user %>
-                  <li><%= link_to 'Modifier mon annonce', edit_post_path(@post) %></li>
-                  <li><%= link_to 'Supprimer', @post, method: :delete, data: { confirm: 'sure?' } %></li>
+                <% if @post.user_id == current_user.id %>
+								<button type="button" class="btn btn-secondary">
+                  <%= link_to 'Modifier mon annonce', edit_post_path(@post) %>
+								</button>
+								<button type="button" class="btn btn-secondary">
+									<%= link_to 'Supprimer', @post, method: :delete, data: { confirm: 'sure?' } %>
+								</button>
                 <% end %>
 							</ul>
 						</div>

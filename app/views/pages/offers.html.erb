@@ -40,7 +40,7 @@
                           <%= post.title %>
                         </h5>
       									<span class="adprice">
-                          <%= post.price %> €<span style="font-size: 15px;"> /jours</span>
+                          <%= number_to_currency post.price, unit: "€", separator: ",", format: "%n%u" %> <span style="font-size: 15px;"> /jours</span>
                         </span>
       									<p class="catpath"><%= post.category.name %></p>
       									</section>

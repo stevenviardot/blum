@@ -20,7 +20,7 @@ class RentsController < ApplicationController
    @rent.recipient = @post.user_id
    @rent.user_id = current_user
    @rent.save
-   redirect_to post_rents_path(@post)
+   redirect_to renting_list_path(@post)
   end
 
 

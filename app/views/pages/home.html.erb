@@ -53,8 +53,8 @@
 								<li>
 									<% @posts[0..3].each do |post| %>
 										<div class="col-md-3 biseller-column">
-											<% link_to post do %>
-												<img src="images/p1.jpg"/>
+											<%= link_to post do %>
+												<%= image_tag(post.images_url.to_s) %>
 											<% end %>
 											<span class="price"><%= post.price %> €<span style="font-size: 10px;"> /jours</span></span>
 											<div class="ad-info">
@@ -66,10 +66,10 @@
 								</li>
 
 								<li>
-									<% @posts[0..3].each do |post| %>
+									<% @posts[4..7].each do |post| %>
 										<div class="col-md-3 biseller-column">
-											<% link_to post do %>
-												<img src="images/p1.jpg"/>
+											<%= link_to post do %>
+												<%= image_tag(post.images_url.to_s) %>
 											<% end %>
 											<span class="price"><%= post.price %> €<span style="font-size: 10px;"> /jours</span></span>
 											<div class="ad-info">

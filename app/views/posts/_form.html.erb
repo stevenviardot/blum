@@ -18,7 +18,7 @@
         <% end %>
 
   			<div class="post-ad-form">
-  				<form>						
+  				<form>
             <div>
               <%= form.collection_select :category_id, Category.all, :id, :name, { prompt: "Toutes nos categories" }, class: "phone" %>
             </div>
@@ -66,6 +66,15 @@
               <%= form.text_field :price, class: "phone" %>
             </div>
 
+  					<div class="clearfix"></div>
+
+						<div>
+              <label><%= form.label :images %> <span>*</span></label>
+            </div>
+  					<div>
+              <%= form.file_field :images, class: "phone" %>
+            </div>
+						<br>
   					<div class="clearfix"></div>
 
             <div>

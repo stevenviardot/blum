@@ -44,13 +44,17 @@
 						<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
 						   <div>
 												<div id="container">
-								
+
 								<div class="clearfix"></div>
 							<ul class="list">
                 <% @posts.each do |post| %>
                   <%= link_to post do %>
                     <li>
-                      <img src="images/m13.jpg" title="" alt="" />
+											<% if post.images_url.present? %>
+                      	<%= image_tag(post.images_url.to_s) %>
+											<% else %>
+												<%= image_tag "no-image-icon.png" %>
+											<% end %>
       									<section class="list-left">
       									<h5 class="title">
                           <%= post.title %>
@@ -99,7 +103,7 @@
                 <% @posts.each do |post| %>
                   <%= link_to post do %>
                     <li>
-                      <img src="images/m13.jpg" title="" alt="" />
+                      <%= image_tag(post.images_url.to_s) %>
       									<section class="list-left">
       									<h5 class="title">
                           <%= post.title %>

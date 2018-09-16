@@ -18,7 +18,7 @@ class RentsController < ApplicationController
    @rent = @post.rents.create(rent_params)
 
    @rent.recipient = @post.user_id
-   @rent.user_id = current_user   
+   @rent.user_id = current_user
    @rent.save
    redirect_to post_rents_path(@post)
   end
@@ -27,7 +27,7 @@ class RentsController < ApplicationController
 private
 
   def rent_params
-    params.require(:rent).permit(:body, :delivery_adress, :delivery_time)
+    params.require(:rent).permit(:body, :delivery_adress, :delivery_time, :activated)
   end
 
   def get_post

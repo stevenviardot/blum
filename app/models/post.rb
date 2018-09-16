@@ -4,4 +4,5 @@ class Post < ApplicationRecord
   belongs_to :category
 
   mount_uploader :images, ImagesUploader
+  
 end

@@ -1,20 +1,17 @@
 <%= render "layouts/banner" %>
 <br>
 
-
-
-
-
 <div class="container">
 	<h2 class="text-center"> Mes locations</h2>
+
 	<br>
   <table class="table table-striped">
 
 		<thead class="thead-dark">
       <tr>
-        <th scope="col">recipient</th>
-        <th scope="col">titre du poste </th>
-        <th scope="col">createur du post</th>
+        <th scope="col">Titre de l'annonce </th>
+				<th scope="col">Propriètaire de l'objet</th>
+				<th scope="col">Status de la demande</th>
       </tr>
     </thead>
 
@@ -23,10 +20,8 @@
     <% @rents.each do |rent| %>
       <tbody>
         <tr>
-          <td><%= rent.recipient %></td>
           <td><%= post.title %></td>
           <td><%= post.user.email %></td>
-          <td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
 					<% if rent.activated == true %>
 						<td style="color: green;">Validé</td>
 					<% elsif rent.activated == false %>
@@ -34,6 +29,7 @@
 					<% else rent.activated == nil %>
 						<td style="color: grey;">En attente</td>
 					<% end %>
+					<td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
         </tr>
       </tbody>
     <% end %>
@@ -41,16 +37,17 @@
 <!-- Createur de l'annonce (proprio de l'objet) -->
 		<% @rents_recipient.each do |rent| %>
       <tbody>
-        <tr>
-          <td><%= rent.recipient %></td>
+				<tr>
           <td><%= post.title %></td>
           <td><%= post.user.email %></td>
-          <td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
 					<% if rent.activated == true %>
 						<td style="color: green;">Validé</td>
 					<% elsif rent.activated == false %>
 						<td style="color: red;">Refusée</td>
+					<% else rent.activated == nil %>
+						<td style="color: grey;">En attente</td>
 					<% end %>
+					<td><%= link_to 'Voir', post_rent_path(post, rent) %></td>
         </tr>
       </tbody>
     <% end %>

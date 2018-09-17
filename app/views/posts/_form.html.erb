@@ -63,10 +63,11 @@
               <label><%= form.label :tarif_journalier %> <span>*</span></label>
             </div>
   					<div>
-              <%= form.text_field :price, class: "phone" %>
+              <%= form.number_field :price, class: "phone" %>
             </div>
 
   					<div class="clearfix"></div>
+						<br>
 
 						<div>
               <label><%= form.label :images %> <span>*</span></label>
@@ -86,11 +87,11 @@
 
   					<div class="clearfix"></div>
   					<div class="personal-details">
-  						<p class="post-terms">En cliquant sur <strong>Déposer une annonce</strong> vous acceptez nos <a href="terms.html" target="_blank">Terms of Use </a> et nos <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+  						<p class="post-terms">En cliquant sur <strong>Déposer une annonce</strong> vous acceptez nos <a href="terms.html" target="_blank">Terms of Use </a> et nos <a href="privacy.html" target="_blank">mentions légales</a></p>
   					</div>
 
 						<div class="actions" style="float: left;">
-							<%= form.submit :deposer_une_annonce %>
+							<%= form.submit :deposer %>
 						</div>
 						<div class="clearfix"></div>
 

@@ -13,11 +13,9 @@
 					<h2><%= @post.title %></h2>
 					<p> <i class="glyphicon glyphicon-map-marker"></i><%= @post.location %> | Ajouté le <%= @post.created_at.strftime("%d/%m/%Y") %> à <%= @post.created_at.strftime("%H:%M:%S") %> </p>
 					<div class="flexslider">
-						<ul class="slides">
-							<li>
+
                 <%= image_tag(@post.images_url.to_s) %>
-							</li>
-						</ul>
+						
 					</div>
 
 
@@ -48,7 +46,9 @@
 					</div>
 					<div class="interested text-center">
 						<% if @post.user_id != current_user.id %>
-							<h4><%= link_to 'Faire un réservation', new_post_rent_path(@post) %></h4>
+							<button type="button" class="btn btn-secondary">
+								<h4><%= link_to 'Faire un réservation', new_post_rent_path(@post) %></h4>
+							</button>
 						<% else %>
 							<h4>Vous êtes le createur de l'annonce </h4>
 						<% end %>

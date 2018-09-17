@@ -25,17 +25,20 @@
         <td><%= @rent.body %></td>
 				<td><%= @rent.delivery_adress %></td>
 				<td><%= @rent.delivery_time %></td>
-
-				<%= form_for([@post, @post.rents.build]) do |form| %>
-	        <td>
-						<%= form.label 'activated_true', 'Validé' %>
-	        	<%= form.radio_button :activated, true %>
-					</td>
-          <td>
-						<%= form.label 'activated_false', 'Refusé' %>
-          	<%= form.radio_button :activated, false %>
-					</td>
-				  <td><%= form.submit 'Répondre' %></td>
+				<% if current_user.id == @post.user_id %>
+					<%= form_for([@post, @post.rents.build]) do |form| %>
+		        <td>
+							<%= form.label 'activated_true', 'Validé' %>
+		        	<%= form.radio_button :activated, true %>
+						</td>
+	          <td>
+							<%= form.label 'activated_false', 'Refusé' %>
+	          	<%= form.radio_button :activated, false %>
+						</td>
+					  <td><%= form.submit 'Répondre' %></td>
+					<% end %>
+				<% else %>
+					<td>il faut payé</td>
 				<% end %>
       </tr>
     </tbody>

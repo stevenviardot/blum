@@ -24,9 +24,7 @@
           <td><%= post.title %></td>
           <td><%= post.user.email %></td>
 					<% if rent.activated == true %>
-						<td style="color: green;">
-							Validé
-						</td>
+						<td style="color: green;">Validé</td>
 					<% elsif rent.activated == false %>
 						<td style="color: red;">Refusée</td>
 					<% else rent.activated == nil %>

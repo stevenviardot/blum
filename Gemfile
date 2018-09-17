@@ -72,3 +72,5 @@ gem "mini_magick"
 
 #will_paginate
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
+gem 'stripe'

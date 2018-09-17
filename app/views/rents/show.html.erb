@@ -38,7 +38,7 @@
 					  <td><%= form.submit 'Répondre' %></td>
 					<% end %>
 				<% else %>
-					<td>il faut payé</td>
+					<td><%= render "charges/new" %></td>
 				<% end %>
       </tr>
     </tbody>

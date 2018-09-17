@@ -3,6 +3,8 @@ Rails.application.routes.draw do
     resources :rents
   end
 
+  resources :charges
+
   devise_for :users
   root 'pages#home'
   get 'pages/contact'
